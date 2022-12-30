@@ -33,7 +33,7 @@ class HandleFileUpload(APIView):
             
             return Response({
                 'status' : 400,
-                'message' : 'somethign went wrong',
+                'message' : 'something went wrong',
                 'data'  : serializer.errors
             })
         except Exception as e:
